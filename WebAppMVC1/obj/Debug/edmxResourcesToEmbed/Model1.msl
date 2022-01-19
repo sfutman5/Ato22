@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PruebasModelStoreContainer" CdmEntityContainer="DBPrubeasEntities">
+    <EntitySetMapping Name="Tbl_Profiles">
+      <EntityTypeMapping TypeName="PruebasModel.Tbl_Profiles">
+        <MappingFragment StoreEntitySet="Tbl_Profiles">
+          <ScalarProperty Name="IdProfile" ColumnName="IdProfile" />
+          <ScalarProperty Name="Profile" ColumnName="Profile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Users">
+      <EntityTypeMapping TypeName="PruebasModel.TBL_Users">
+        <MappingFragment StoreEntitySet="TBL_Users">
+          <ScalarProperty Name="IdEmployee" ColumnName="IdEmployee" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IdProfile" ColumnName="IdProfile" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

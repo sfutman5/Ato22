@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PruebasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tbl_Profiles">
+    <Key>
+      <PropertyRef Name="IdProfile" />
+    </Key>
+    <Property Name="IdProfile" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Profile" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_Users">
+    <Key>
+      <PropertyRef Name="IdEmployee" />
+    </Key>
+    <Property Name="IdEmployee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IdProfile" Type="int" />
+    <Property Name="Status" Type="int" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="Login" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PruebasModelStoreContainer">
+    <EntitySet Name="Tbl_Profiles" EntityType="Self.Tbl_Profiles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Users" EntityType="Self.TBL_Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
